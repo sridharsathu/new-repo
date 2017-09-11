@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!--  <div ng-app="" ng-init="firstName='sridhar';lastname='sathu'">
+<p>Total in dollar: <span ng-bind= firstName +""+ lastname></span>
+</div>-->
+
+<!--  <div ng-app="" ng-init="p=[10,60,20]" >
+
+<span ng-bind=Person.pfirstName></span>
+{{p[2]}}
+
+<span ng-bind=p[2]></span>
+
+</div> -->
+
+
+<!--  <div ng-app="myApp" ng-controller="myCtrl">
+{{ firstName +" "+lastName  }}
+</div>
+
+<script >
+     var app=angular.module("myApp",[]);
+             app.controller("myCtrl",function($scope) {
+             $scope.firstName="Sridhar";
+             $scope.lastName="sathu";
+             }
+             
+             );
+</script> -->
+
+<!--  <div ng-app="" ng-init="quantity='10';size='20'">
+Quantity: <input type="number" ng-model="quantity"/> <br>
+size: <input type="number" ng-model="size"/><br>
+<span ng-bind="quantity*size"></span>
+{{quantity*size}}
+
+</div> -->
+
+<!--  <div ng-app="" ng-init="names=['yadagiri','sridhar','srikanth']">
+<ol>
+<li ng-repeat="x in names"  >
+{{x}}
+</li>
+</ol>
+</div> -->
+
+<!--   <div ng-app="" ng-init="names=[{name:'sridhar',mobile:'98482 98482'},
+                               {name:'srikanth',mobile:'77028 77028'}]" >
+   <un >
+   <li ng-repeat="x in names">
+   {{x.name+'        ,   '+x.mobile}}
+   </li>
+   </un>                            
+</div> -->
+
+<!--  <div ng-app="myApp" ng-controller="myCtrl">
+
+name: <input ng-model="name">
+</div>
+<script>
+      var app=   angular.module("myApp",[]);
+           app.controller(myCtrl,function($scope)
+        		{
+        	   
+        	   $scope.name="sridhar";
+        		}   
+           )
+</script>
+ -->
+ 
+<!--   <div ng-app="myApp" ng-controller="myCtrl">
+ name: <input ng-model="name">
+ {{name}}
+ </div>
+ 
+ <script>
+     var app=angular.module('myApp',[]);
+     
+      app.controller('myCtrl',function($scope)
+    		  
+      {
+    	  
+    	  $scope.name="Nisum Consulting Pvt Ltd";
+    	  
+      }
+      
+      );
+ 
+ </script>
+ -->
+ <!--  <form  ng-app=""  name="myForm">
+ 
+ Email: <input type="email" name="text" ng-model="myemail">
+   <span   ng-show="myForm.myAddress.$error.email">Not a valid email Address</span> <br>
+   email is {{myemail}}
+ </form>
+
+ 
+ <p>Enter your e-mail address in the input field. AngularJS will display an errormessage if the address is not an e-mail.</p>
+ -->
+ <!--  <div ng-app="myApp" ng-controller="myCtrl">
+ <p ng-model="firstName"></p>
+ </div>
+ <script>
+  var app=angular.module('myApp',[]);
+  app.controller('myCtrl',function($scope)
+  
+  {
+	  $scope.firstName="sridhar";
+	  $scope.lastName="sathu";
+  }
+  );
+ 
+ 
+ </script>
+ -->
+ 
+ <!--  <div ng-app="myApp" ng-controller="myCtrl">
+ <h1 ng-click="chno()">{{phno}}</h1>
+ 
+ 
+ </div>
+ <script>
+ var app=angular.module('myApp',[]);
+ app.controller('myCtrl',function($scope)
+{
+	 $scope.phno="98482 98482";
+	 $scope.chno=function()
+	 { 
+		 $scope.phno="77028 77028";
+	 }
+}		 
+ 
+ );
+ </script>
+ -->
+ 
+ <!--  <div ng-app="myApp" ng-controller="myCtrl">
+ FirstName:<input type="text" ng-model="firstName"><br>
+ LastName:<input type="text" ng-model="lastName"><br>
+ 
+ Full Name: {{firstName+' ' +lastName }}
+ </div>
+ 
+ <script >
+ var app=angular.module('myApp',[]);
+ app.controller('myCtrl',function($scope)
+		 {
+	 $scope.firstName="Sridhar";
+	 $scope.lastName="Sathu"
+	 
+		 }
+		 );
+		 
+ </script>
+ 
+ -->
+  <!--  <div ng-app="myApp" ng-controller="myCtrl">
+  First Name:<input type="text" ng-model="firstName" ><br>
+  Last Name:<input type="text"  ng-model="lastName"><br>
+Full Name: {{fullName()}}
+ </div>
+ 
+<script>
+  var app= angular.module('myApp',[]);
+  app.controller('myCtrl',function($scope)
+  {
+	 
+	  $scope.firstName="Sridhar";
+	  $scope.lastName="Sathu";
+	  $scope.fullName=function()
+	  {
+		  return $scope.firstName+' '+$scope.lastName;
+	  }
+  }  
+  
+  );
+  
+</script>
+--> 
+ 
+ <!--  <body >
+  
+  out side: {{color}}
+  <div ng-app="myApp" ng-controller="myCtrl">
+   In side: {{color}}
+  
+  </div>
+  
+   out side: {{color}}
+ 
+  <script >
+   var app=angular.module('myApp',[]);
+   
+   app.run(function($rootscope)
+   {
+	   $rootscope.color="blue";
+	   
+	   //document.console(color);
+   });
+   
+   app.controller('myCtrl',function($scope)
+		   {
+	     alert(" checking about color");
+	   $scope.color="red";
+	  // document.console(color);
+		   }
+		  
+   );
+	  
+  
+  </script>
+  -->
+  
+      <div  ng-app="myApp" ng-controller="myCtrl">
+  <p>Today Welcome message is: </p>
+  {{mywelcome1 }}
+  <ol>
+  <li  ng-repeat="x in mywelcome1">
+  {{x.Name +" "+x.City }}
+  </li>
+  
+  </ol>
+  
+  </div>
+  <script>
+       var app=angular.module('myApp',[]);
+        app.controller('myCtrl',function($scope,$http)
+        		{
+        	   
+        	   $http({ 
+        		   method: "GET",
+        		   url:"welcome.html",
+        		   
+        	   }).then(function(response)
+        	   {
+        		   $scope.mywelcome1=response.data.records;
+        		   //alert("nbrfvehjrvh")
+        	   }),(function (response)
+        	   {
+        		   alert("something wrong");
+       	        $scope.mywelcome="Something wrong";
+       	   });
+        	
+        		});
+        		</script>
+  
+
+</body>
+</html>
